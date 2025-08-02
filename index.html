@@ -20,12 +20,6 @@
       text-align: center;
     }
 
-    @media (max-width: 640px) {
-      h1 {
-        font-size: 2rem;
-      }
-    }
-
     .premium-card {
       background: #ffffff;
       box-shadow: 0 25px 50px rgba(0, 0, 0, 0.08),
@@ -80,24 +74,10 @@
       border-radius: 0.5rem;
       box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     }
-
-    /* Responsive tweaks for smaller screens */
-    @media (max-width: 640px) {
-      body {
-        padding: 1rem;
-      }
-
-      .classic-button {
-        width: 100%;
-        padding: 0.75rem;
-        text-align: center;
-      }
-    }
   </style>
 </head>
 <body>
   <h1>Find Your Seat</h1>
-
   <div class="premium-card">
     <input 
       type="text" 
@@ -106,7 +86,7 @@
       placeholder="Enter your name..." 
       onkeyup="searchGuest()"
     />
-    <button class="classic-button w-full sm:w-auto" onclick="searchGuest()">Search</button>
+    <button class="classic-button" onclick="searchGuest()">Search</button>
 
     <div id="suggestions" class="classic-suggestions hidden"></div>
   </div>
